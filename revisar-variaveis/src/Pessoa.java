@@ -4,12 +4,22 @@ public class Pessoa {
     private double altura;
     private double peso;
     private char sexo;
+    private int quantidadeDePassos;
 
-    public Pessoa(String nome, double altura, double peso, char sexo) {
+    public Pessoa(String nome, double altura, double peso, char sexo,int quantidadeDePassos) {
         this.nome = nome;
         this.altura = altura;
         this.peso = peso;
         this.sexo = sexo;
+        this.quantidadeDePassos = quantidadeDePassos;
+    }
+
+    public int getQuantidadeDePassos() {
+        return quantidadeDePassos;
+    }
+
+    public void setQuantidadeDePassos(int quantidadeDePassos) {
+        this.quantidadeDePassos = quantidadeDePassos;
     }
 
     public String getNome() {

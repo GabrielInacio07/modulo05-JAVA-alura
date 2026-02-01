@@ -3,10 +3,13 @@ class Main{
     System.out.println("Revisão de TIPOS/VARIÁVEIS");
 
         int quantidadeDePassos = 500;
-        double alturaUser = 1.85;
-        String nome = "Gabriel";
 
-        int alturaEmCentimetro = (int) (alturaUser * 100);
-        System.out.println(alturaEmCentimetro);
+        Pessoa people = new Pessoa("Gabriel",1.85,95.0,'M',300);
+
+        if(people.getQuantidadeDePassos() < 500){
+            System.out.println(people.getNome() + " você precisa aumentar a quantidade de passos");
+        }else {
+            System.out.println(people.getNome() + " você está dentro da meta exigida");
+        }
     }
 }
