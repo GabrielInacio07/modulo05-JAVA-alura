@@ -1,4 +1,4 @@
-package D01;
+package Model_Desafios;
 
 public class PessoaEstudante {
 
